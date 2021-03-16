@@ -1,8 +1,8 @@
 import React from 'react'
 import './Skills.scss'
-import frontend_icon from '../images/frontend.svg'
-import cloud_icon from '../images/cloud.png'
-import other_icon from '../images/other.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChalkboardTeacher, faDatabase, faWindowRestore } from '@fortawesome/free-solid-svg-icons'
+
 
 function Skills() {
     return (
@@ -13,7 +13,7 @@ function Skills() {
             </div>
             <div className="categories">
                 <div className="category">
-                    <img src={frontend_icon} alt="front-end icon" />
+                    <FontAwesomeIcon icon={faWindowRestore} size="5x" color="#CF5C36" />
                     <h3>Front-End</h3>
                     <ul className="skills">
                         <li className="skill">React</li>
@@ -24,7 +24,7 @@ function Skills() {
                     </ul>
                 </div>
                 <div className="category">
-                    <img src={cloud_icon} alt="front-end icon" />
+                    <FontAwesomeIcon icon={faDatabase} size="5x" color="#CF5C36" />
                     <h3>Backend</h3>
                     <div className="skills">
                         <div className="skill">Postgres, SQLite</div>
@@ -34,7 +34,7 @@ function Skills() {
                     </div>
                 </div>
                 <div className="category">
-                    <img src={other_icon} alt="front-end icon" />
+                    <FontAwesomeIcon icon={faChalkboardTeacher} size="5x" color="#CF5C36" />
                     <h3>Other</h3>
                     <div className="skills">
                         <div className="skill">Unit Testing</div>
