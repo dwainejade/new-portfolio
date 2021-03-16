@@ -3,7 +3,6 @@ import './Skills.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChalkboardTeacher, faDatabase, faWindowRestore } from '@fortawesome/free-solid-svg-icons'
 
-
 function Skills() {
     return (
         <div className="skills-container">
@@ -43,7 +42,6 @@ function Skills() {
                         <div className="skill">Detail-oriented</div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

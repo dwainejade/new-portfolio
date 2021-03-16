@@ -9,7 +9,7 @@
     background: radial-gradient(circle, rgba(43,55,96,1) 0%, rgba(11,1,3,1) 100%);
     padding: 2rem;
     @include flex-center;
-    height: 85vh;
+    height: 90vh;
 
     .description{
         color: white;
@@ -47,12 +47,13 @@
 }
 
 // media queries //
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 770px) {
     .hero-container{
         flex-direction: column-reverse;
         
         .hero-pic img{
-            margin-bottom: 2rem;
+            margin:0;
+            margin-bottom: 1rem;
         }
     }
 }

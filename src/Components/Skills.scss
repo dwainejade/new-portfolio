@@ -1,8 +1,10 @@
 .skills-container{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items:center;
     padding: 2rem; 
+    height: 85vh;
 
     .head{
         h2{
@@ -45,5 +47,15 @@
         }
 
         }
+    }
+}
+
+// media queries //
+@media only screen and (max-width: 767px) {
+    .categories{
+        flex-direction: column;
+    }
+    .skills-container{
+        height: 100%;
     }
 }
