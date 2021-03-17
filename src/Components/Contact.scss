@@ -1,0 +1,55 @@
+.contact-section{
+    background-color: rgb(21, 29, 48);
+    height: 100vh;
+}
+
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        top:20%;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        background-color: #FFF;
+        padding: 2rem;
+        border-radius: 10px;
+        -webkit-box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
+        -moz-box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
+        box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
+
+        h2{
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 2rem;
+        }
+    
+        label{
+            display: flex;
+            flex-direction: column;
+            margin: .6rem;
+            width: 350px;
+            
+        }
+
+        input{
+            height: 2rem;
+            border: 1px solid #D0DDD7;
+            border-radius: 5px;
+        }
+
+        textarea{
+            height: calc(2rem*5);
+            border: 1px solid #D0DDD7;
+            border-radius: 5px;
+        }
+
+        Button{
+            padding: .5rem 2rem;
+            margin-left: 50%;
+            margin-top: 15px;
+        }
+
+    }

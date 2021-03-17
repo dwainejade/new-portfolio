@@ -40,29 +40,50 @@
     }
 
     .project-a{
-        background-color: #748CAB;
-        color: #fff;
+        background-color: #EEEEEE;
+        color: #2B2D42;
     }
 
+    h4{
+        color: #CF5C36;
+    }
     .project-b{
         background-color: #FFFBFA;
-
-        h4{
-            color: #CF5C36;
-        }
-       
+        color: #2B2D42;
     }
 
+    .caption-wrapper{
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+        .badge{
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0 .4rem;
+        }
+    }
+    
     .project-wrapper{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 2rem;
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
 
+        .picture-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+
+        button{
+            font-weight: 600;
+            margin: auto;
+            left: 30%;
+        }
         img{
-            width: 450px;
+            max-width: 450px;
         }
 
     }
