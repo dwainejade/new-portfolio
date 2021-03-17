@@ -1,43 +1,35 @@
 import React, { useState } from 'react'
 import './Nav.scss'
-import useWindowScrollPosition from "@rehooks/window-scroll-position";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
-function Nav() {
-    // const [change, setChange] = useState(false);
-    // const changePosition = 50;
 
-    // let position = useWindowScrollPosition();
-    // // position == { x: 0, y: 0 }
+function Navi() {
+    const [navbar, setNavbar] = useState(false);
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
 
-    // if (position.y > changePosition && !change) {
-    //     setChange(true);
-    // }
-
-    // if (position.y <= changePosition && change) {
-    //     setChange(false);
-    // }
-
-    // let style = {
-    //     backgroundColor: change ? "white" : "transparent",
-    //     transition: "300ms ease",
-    //     position: "fixed",
-    //     right: 0,
-    //     left: 0,
-    //     top: 0,
-    //     color: 'black!important',
-    // };
+    window.addEventListener('scroll', changeBackground)
 
     return (
-        <div className='navbar'>
-            <a href='/' className='logo'>
-                Dwaine Matthew
-            </a>
-            <div className='nav-links'>
-                <a href='/projects' className='link'>Projects</a>
-                <a href='/contact' className='link'>Contact</a>
-                <a href='/resume' className='link'>Resume</a>
-            </div>
-        </div>
+            <Navbar className={navbar ? 'navbar active' : 'navbar'} bg="light" expand='md'>
+                <Navbar.Brand href="#home">Dwaine Matthew</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                    </Nav>
+                    <Nav inline>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link href="#resume">Resume</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
     )
 }
-export default Nav
+export default Navi

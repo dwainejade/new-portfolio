@@ -2,6 +2,8 @@ import React from 'react'
 import './Projects.scss'
 import sfr from '../images/sfr.png'
 import plants from '../images/plants.png'
+import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 
 function Projects() {
     return (
@@ -14,10 +16,19 @@ function Projects() {
                 <h3>Secret Family Recipe</h3>
                 <h4>UX/UI, Front-end design</h4>
                 <div className="project-wrapper">
-                    <img src={sfr} alt="laptop with pic of recipe website" />
+                    <div className="picture-wrapper">
+                        <img src={sfr} alt="laptop with pic of recipe website" />
+                        <Button className='btn website-btn' variant='danger'>visit website</Button>
+                    </div>
                     <div className="caption-wrapper">
                         <p className="caption">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                        <button className='btn website-btn'>visit website</button>
+                        <div className="stacks">
+                            <Badge pill variant="secondary">React</Badge>
+                            <Badge pill variant="secondary">CSS</Badge>
+                            <Badge pill variant="secondary">Bootstrap</Badge>
+                            <Badge pill variant="secondary">Axios</Badge>
+                            
+                        </div>
                     </div>
 
                 </div>
@@ -36,6 +47,7 @@ function Projects() {
                 <div className="project-wrapper">
                     <img src={sfr} alt="laptop with pic of recipe website" />
                     <p className="caption">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also.</p>
+
                 </div>
             </div>
         </div>

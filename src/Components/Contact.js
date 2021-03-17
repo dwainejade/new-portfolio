@@ -1,32 +1,29 @@
 import React from 'react'
 import './Contact.scss'
-import { Button, Form } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 
 
 function Contact() {
     return (
-        <div>
-            <Form>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                    <Form.Label>Subject</Form.Label>
-                    <Form.Control type="text" placeholder="About A Job" />
-                </Form.Group>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
-                </Form.Group>
-
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
+        <div className="contact-section">
+            <div className='form-container'>
+                <h2>Contact Me</h2>
+                <label htmlFor="subject">Subject
+                <input type="text" />
+                </label>
+                <label htmlFor="email">Email
+                <input type="email" />
+                </label>
+                <label htmlFor="message">Message
+                <textarea id="message" name="message" />
                 <Button variant="primary" type="submit">
-                    Submit
-                    </Button>
-            </Form>
-
+                    SEND
+                </Button>
+                </label>
+            </div>
         </div>
+
     )
 }
 
