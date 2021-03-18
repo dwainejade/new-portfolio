@@ -75,17 +75,23 @@
         .picture-wrapper{
             display: flex;
             flex-direction: column;
+
+            .button-wrapper{
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: .6rem;
+            }
         }
 
         button{
+            size: 100px;
             font-weight: 600;
             margin: auto;
             left: 30%;
         }
         img{
-            max-width: 450px;
+            max-width: 350px;
         }
-
     }
 }
 

@@ -5,7 +5,7 @@ import { faChalkboardTeacher, faDatabase, faWindowRestore } from '@fortawesome/f
 
 function Skills() {
     return (
-        <div className="skills-container">
+        <div className="skills-container" id='skills-section'>
             <div className="skills-wrapper">
                 <div className="head">
                     <h2>My Skills</h2>
