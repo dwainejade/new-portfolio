@@ -7,9 +7,14 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
+        function resetForm() {
+            document.getElementById("email-form").reset();
+        }
+
         emailjs.sendForm('portfolio-website', 'portfolio-template', e.target, 'user_9T9RN8PhFxqhNhmRLQQDO')
             .then((result) => {
                 console.log(result.text);
+                resetForm()
             }, (error) => {
                 console.log(error.text);
             });
@@ -18,24 +23,26 @@ const Contact = () => {
 
     return (
         <div className="contact-section">
-            <form onSubmit={sendEmail} className='form-container'>
+            <div className='form-container'>
                 <h2>Contact Me</h2>
-                <label htmlFor="name">Name
-                    <input type="text" name='name'/>
-                </label>
-                <label htmlFor="email">Email
-                    <input type="email" name='email'/>
-                </label>
-                <label htmlFor="subject">Subject
-                    <input type="text" name='subject'/>
-                </label>
-                <label htmlFor="message">Message
-                    <textarea id="message" name='message'/>
-                    <Button variant="primary" type="submit">
-                        SEND
+                <form onSubmit={sendEmail} id='email-form'>
+                    <label htmlFor="name">Name*
+                    <input type="text" name='name' required />
+                    </label>
+                    <label htmlFor="email">Email*
+                    <input type="email" name='email' required />
+                    </label>
+                    <label htmlFor="subject">Subject*
+                    <input type="text" name='subject' required />
+                    </label>
+                    <label htmlFor="message">Message*
+                    <textarea id="message" name='message' required />
+                        <Button variant="primary" type="submit">
+                            SEND
                     </Button>
-                </label>
-            </form>
+                    </label>
+                </form>
+            </div>
         </div>
 
     )

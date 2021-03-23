@@ -52,4 +52,15 @@
             margin-top: 15px;
         }
 
+        input:valid {
+            border: 2px solid black;
+        }
+
+        #not-submitted{
+            display: none;
+        }
+        #submitted{
+            display:block;
+            color: rgb(82, 148, 82);
+        }
     }

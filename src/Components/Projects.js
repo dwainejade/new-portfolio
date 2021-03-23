@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './Projects.scss'
 import sfr from '../images/sfr.png'
 import plants from '../images/plants.png'
@@ -7,17 +7,16 @@ import Badge from 'react-bootstrap/Badge';
 
 
 const Projects = () => {
-    const titleRef = useRef()
+    // const titleRef = useRef()
 
-
-    function scrollBack() {
-        titleRef.current.scrollIntoView({ behavior: 'smooth' })
-    }
+    // function scrollBack() {
+    //     titleRef.current.scrollIntoView({ behavior: 'smooth' })
+    // }
 
     return (
         <div className="projects-container" >
             <div className="title">
-                <h2 ref={titleRef}>My Projects</h2>
+                <h2>My Projects</h2>
                 <h3>I have experience building the front-end and backend of apps.</h3>
             </div>
             <div className="project-a">
@@ -25,7 +24,7 @@ const Projects = () => {
                 <h4>UX/UI, Front-end design</h4>
                 <div className="project-wrapper">
                     <div className="picture-wrapper">
-                        <img src={sfr} alt="laptop with pic of recipe website" />
+                        <img className='grow' src={sfr} alt="laptop with pic of recipe website" />
                         <div className="button-wrapper">
                             <Button a href='https://my-secret-family-recipes.herokuapp.com' className='btn website-btn' variant='danger' >Visit Website</Button>
                             <Button a href='https://github.com/dwainejade/secret-family-recipes-frontend' className='btn website-btn' variant='primary' >View Code</Button>
@@ -84,7 +83,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={scrollBack}>projects</button>
+            {/* <button onClick={scrollBack}>projects</button> */}
         </div>
     )
 }

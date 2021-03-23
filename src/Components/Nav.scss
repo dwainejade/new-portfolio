@@ -7,6 +7,7 @@
 .navbar{
     display: flex;
     position: fixed;
+    z-index: 3;
     
     width: 100%;
     background-color: hsla(89, 43%, 51%, 0);
