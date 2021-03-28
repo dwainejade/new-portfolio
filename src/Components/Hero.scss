@@ -5,8 +5,8 @@
 }
 
 .hero-container{
-    background: rgb(43,55,96);
-    background: radial-gradient(circle, rgba(43,55,96,1) 0%, rgba(11,1,3,1) 100%);
+    // background: rgb(43,55,96);
+    // background: radial-gradient(circle, rgba(43,55,96,1) 0%, rgba(11,1,3,1) 100%);
     padding: 2rem;
     @include flex-center;
     height: 100vh;
@@ -25,10 +25,12 @@
         h1{
             font-size: 3rem;
             font-weight: 600;
+            
         }
         h2{
             font-size: 2rem;
             font-weight: 300;
+            
         }
         p{
             font-size: 1.3rem;

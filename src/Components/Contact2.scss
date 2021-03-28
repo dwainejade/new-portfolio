@@ -1,0 +1,106 @@
+.contact-section2 {
+  height: 100vh;
+  //   background: rgb(255, 255, 255);
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 1) 0%,
+  //     rgba(255, 255, 255, 1) 36%,
+  //     rgba(36, 33, 80, 1) 36%,
+  //     rgba(32, 29, 69, 1) 45%,
+  //     rgba(22, 28, 53, 1) 71%,
+  //     rgba(5, 11, 27, 1) 100%
+  //   );
+
+  display: flex;
+
+  .contact-info {
+    position: relative;
+    background: rgb(227, 83, 83);
+    color: white;
+    width: 300px;
+    padding: 3rem 1.5rem;
+    margin-left: -30%;
+    h2{
+        color: white;
+    }
+  }
+
+  .form-container2 {
+    display: flex;
+    margin: auto;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    -webkit-box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
+    -moz-box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
+    box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 2rem;
+    }
+
+    input,
+    textarea {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 1rem;
+      width: 350px;
+      height: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      padding: 1.2rem;
+      background: rgb(240, 241, 244);
+    }
+
+    textarea {
+      height: calc(2rem * 5);
+      border: none;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    Button {
+      padding: 0.5rem 2rem;
+      margin-right: 50%;
+      margin-top: 15px;
+      margin: 0.6rem;
+    }
+
+    input:valid {
+      border: 2px solid black;
+    }
+
+    #not-submitted {
+      display: none;
+    }
+    #submitted {
+      display: block;
+      color: rgb(82, 148, 82);
+    }
+  }
+}
+
+// media queries //
+@media only screen and (max-width: 860px) {
+  .contact-section2 {
+    .form-container2 {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+
+    .contact-info {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      padding: 3rem 1.5rem;
+      margin: 0;
+    }
+  }
+}

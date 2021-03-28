@@ -23,6 +23,9 @@ const Contact = () => {
 
     return (
         <div className="contact-section">
+            <div>
+                <h3 id="contact-caption">Although I enjoy the fast paced world of technology, I am a simple guy. If you're looking for an engineer with endless potential and great dad jokes, send me an email.</h3>
+            </div>
             <div className='form-container'>
                 <h2>Contact Me</h2>
                 <form onSubmit={sendEmail} id='email-form'>
@@ -39,7 +42,7 @@ const Contact = () => {
                     <textarea id="message" name='message' required />
                         <Button variant="primary" type="submit">
                             SEND
-                    </Button>
+                        </Button>
                     </label>
                 </form>
             </div>

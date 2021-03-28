@@ -1,4 +1,6 @@
 .projects-container{
+    color: white;
+    
     .title{
         text-align:center;
         padding: 2rem;
@@ -24,7 +26,7 @@
         text-align: center;
         font-size: 1.1rem;
         font-weight: 600;
-        color: #F9DEC9;
+        color: #EE964B;
     }
     
     p{
@@ -40,16 +42,13 @@
     }
 
     .project-a{
-        background-color: #EEEEEE;
-        color: #2B2D42;
+        // background-color: #EEEEEE;
+        // color: #2B2D42;
     }
 
-    h4{
-        color: #CF5C36;
-    }
     .project-b{
-        background-color: #FFFBFA;
-        color: #2B2D42;
+        // background-color: #FFFBFA;
+        // color: #2B2D42;
     }
 
     .caption-wrapper{
