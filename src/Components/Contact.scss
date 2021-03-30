@@ -1,55 +1,72 @@
-.contact-section{
-    background-color: rgb(21, 29, 48);
-    height: 100vh;
+.contact-section {
+  background-color: rgb(21, 29, 48);
+  height: 100vh;
 }
 
+#contact-caption {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    padding: 2rem;
+  }
 
-    .form-container{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        position: relative;
-        top:20%;
-        justify-content: center;
-        align-items: center;
-        max-width: 500px;
-        background-color: #FFF;
-        padding: 2rem;
-        border-radius: 10px;
-        -webkit-box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
-        -moz-box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
-        box-shadow: 2px 1px 6px 2px rgba(92,90,92,0.66);
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
+  -moz-box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
+  box-shadow: 2px 1px 6px 2px rgba(92, 90, 92, 0.66);
 
-        h2{
-            font-size: 2rem;
-            font-weight: 300;
-            padding: 2rem;
-        }
-    
-        label{
-            display: flex;
-            flex-direction: column;
-            margin: .6rem;
-            width: 350px;
-            
-        }
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2rem;
+  }
 
-        input{
-            height: 2rem;
-            border: 1px solid #D0DDD7;
-            border-radius: 5px;
-        }
+  label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem;
+    width: 350px;
+  }
 
-        textarea{
-            height: calc(2rem*5);
-            border: 1px solid #D0DDD7;
-            border-radius: 5px;
-        }
+  input {
+    height: 2rem;
+    border: 1px solid #d0ddd7;
+    border-radius: 5px;
+  }
 
-        Button{
-            padding: .5rem 2rem;
-            margin-left: 50%;
-            margin-top: 15px;
-        }
+  textarea {
+    height: calc(2rem * 5);
+    border: 1px solid #d0ddd7;
+    border-radius: 5px;
+  }
 
-    }
+  Button {
+    padding: 0.5rem 2rem;
+    margin-left: 50%;
+    margin-top: 15px;
+  }
+
+  input:valid {
+    border: 2px solid black;
+  }
+
+  #not-submitted {
+    display: none;
+  }
+  #submitted {
+    display: block;
+    color: rgb(82, 148, 82);
+  }
+
+}
