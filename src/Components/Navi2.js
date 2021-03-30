@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navi.scss'
+import './Navi2.scss'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 

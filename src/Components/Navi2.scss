@@ -1,0 +1,51 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    
+    width: 100%;
+    background-color: hsla(89, 43%, 51%, 0);
+    justify-content: space-between;
+    
+    
+    .logo{
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .link{
+        color: white;
+        text-decoration: none;
+        margin: 1rem;
+        font-weight: 300;
+    }
+}
+
+.navbar.active{
+    background-color: #fff;
+    color: #111;
+    transition: 300ms ease;
+
+    .logo{
+        color: #111;
+    }
+    .link{
+        color: #111;
+    }
+}
+
+// media queries //
+@media only screen and (max-width: 700px) {
+        
+        .hero-pic img{
+            margin:0;
+            margin-bottom: 1rem;
+        }
+}

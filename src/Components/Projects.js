@@ -60,6 +60,7 @@ const Projects = () => {
             <div className="title">
                 <h2>My Projects</h2>
                 <h3>I have experience building the front-end and backend of apps.</h3>
+                <div className="divider" />
             </div>
             <div className="project-a">
                 <h3>Secret Family Recipe</h3>
@@ -93,6 +94,7 @@ const Projects = () => {
                         </div>
                     </motion.div>
                 </div>
+                <div className="divider" />
             </div>
 
             <div className="project-b">
@@ -125,6 +127,7 @@ const Projects = () => {
                         </div>
                     </motion.div>
                 </div>
+                <div className="divider"/>
             </div>
 
             <div className="project-a">
@@ -160,6 +163,7 @@ const Projects = () => {
                 </div>
             </div>
             {/* <button onClick={scrollBack}>projects</button> */}
+            <div className="divider"/>
         </div>
     )
 }
