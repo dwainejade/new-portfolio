@@ -1,34 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, NavLink } from "react-router-dom";
+
 import './Navi.scss'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Nav from 'react-bootstrap/Nav';
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 
 function Navi() {
-    // const [navbar, setNavbar] = useState(false);
-    // const changeBackground = () => {
-    //     if (window.scrollY >= 80) {
-    //         setNavbar(true)
-    //     } else {
-    //         setNavbar(false)
-    //     }
-    // }
-    // window.addEventListener('scroll', changeBackground)
+    const [change, setChange] = useState(false);
+    const changePosition = 70;
+    let position = useWindowScrollPosition();
+
+    if (position.y > changePosition && !change) {
+        setChange(true);
+        console.log(change)
+    }
+
+    if (position.y <= changePosition && change) {
+        setChange(false);
+    }
+
+    let style = {
+        backgroundColor: change ? "rgb(13,18,34)" : "transparent",
+        transition: "300ms ease",
+        position: "fixed",
+        right: 0,
+        left: 0,
+        top: 0,
+        color: 'black',
+    };
 
     return (
-            <Navbar bg="light" expand='md'>
-                <Navbar.Brand href="#home">Dwaine Matthew</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                    </Nav>
-                    <Nav inline>
-                        {/* <Nav.Link href="#projects">Projects</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link> */}
-                        <Nav.Link href="#resume">Resume</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+        <div className='navbar' style={style}>
+            <Link to="/" className='logo'>
+                Dwaine Matthew
+            </Link>
+            <div className='nav-links'>
+                <NavLink to="/resume" className='link'>Resume</NavLink>
+            </div>
+        </div>
     )
 }
 export default Navi

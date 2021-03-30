@@ -34,64 +34,74 @@ function Skills() {
 
 
     return (
-        <motion.div className="skills-container" id='skills-section'
+        <motion.div id='skills-section'
             variants={headVariants}
             animate={controls}
             initial="hidden"
             ref={ref}
         >
+            <motion.div className="title">
+                <h2>Skills</h2>
+                <h3>I love learning new frameworks</h3>
+                <div className="divider" />
+            </motion.div>
             <div className="skills-wrapper">
-                <motion.div className="head">
-                    <h2>My Skills</h2>
-                    <h3>I have experience building rich web applications.</h3>
-                </motion.div>
                 <motion.div className="categories">
-                    <motion.div className="category"
-                        variants={headVariants}
-                        animate={controls}
-                        initial="hidden"
-                        ref={ref}
-                    >
-                        <FontAwesomeIcon icon={faChalkboardTeacher} size="5x" color="#CF5C36" />
-                        <h3>Front-End</h3>
-                        <ul className="skills">
-                            <li className="skill">React</li>
-                            <li className="skill">HTML, CSS, SaSS, LESS</li>
-                            <li className="skill">JavaScript, AJAX, JSON</li>
-                            <li className="skill">Responsive Design</li>
-                            <li className="skill">Bootstrap</li>
-                        </ul>
-                    </motion.div>
-                    <motion.div className="category"
-                        variants={headVariants}
-                        animate={controls}
-                        initial="hidden"
-                        ref={ref}
-                    >
-                        <FontAwesomeIcon icon={faDatabase} size="5x" color="#CF5C36" />
-                        <h3>Backend</h3>
-                        <ul className="skills">
-                            <li className="skill">Node.js, Express</li>
-                            <li className="skill">Postgres, SQLite</li>
-                            <li className="skill">Python</li>
-                            <li className="skill">Postman, Insomnia</li>
-                        </ul>
-                    </motion.div>
-                    <motion.div className="category"
-                        variants={headVariants}
-                        animate={controls}
-                        initial="hidden"
-                        ref={ref}
-                    >
-                        <FontAwesomeIcon icon={faWindowRestore} size="5x" color="#CF5C36" />
-                        <h3>Other</h3>
-                        <ul className="skills">
-                            <li className="skill">Unit Testing</li>
-                            <li className="skill">Version control (Git)</li>
-                            <li className="skill">Figma, Illustrator</li>
-                            <li className="skill">Detail-oriented</li>
-                        </ul>
-                    </motion.div>
+
+                    <div className='skills-container'>
+                        <motion.div className="category"
+                            variants={headVariants}
+                            animate={controls}
+                            initial="hidden"
+                            ref={ref}
+                        >
+                            <FontAwesomeIcon icon={faChalkboardTeacher} className="skill-icon" size="5x" color="#CF5C36" />
+                            <h3>Front-End</h3>
+                            <ul className="skills">
+                                <li className="skill">React</li>
+                                <li className="skill">HTML, CSS, SaSS, LESS</li>
+                                <li className="skill">JavaScript, AJAX, JSON</li>
+                                <li className="skill">Responsive Design</li>
+                                <li className="skill">Bootstrap</li>
+                            </ul>
+                        </motion.div>
+                    </div>
+
+                    <div className='skills-container'>
+                        <motion.div className="category"
+                            variants={headVariants}
+                            animate={controls}
+                            initial="hidden"
+                            ref={ref}
+                        >
+                            <FontAwesomeIcon icon={faDatabase} className="skill-icon" size="5x" color="#CF5C36" />
+                            <h3>Backend</h3>
+                            <ul className="skills">
+                                <li className="skill">Node.js, Express</li>
+                                <li className="skill">Postgres, SQLite</li>
+                                <li className="skill">Python</li>
+                                <li className="skill">Postman, Insomnia</li>
+                            </ul>
+                        </motion.div>
+                    </div>
+
+                    <div className='skills-container'>
+                        <motion.div className="category"
+                            variants={headVariants}
+                            animate={controls}
+                            initial="hidden"
+                            ref={ref}
+                        >
+                            <FontAwesomeIcon icon={faWindowRestore} className="skill-icon" size="5x" color="#CF5C36" />
+                            <h3>Other</h3>
+                            <ul className="skills">
+                                <li className="skill">Unit Testing</li>
+                                <li className="skill">Version control (Git)</li>
+                                <li className="skill">Figma, Illustrator</li>
+                                <li className="skill">Detail-oriented</li>
+                            </ul>
+                        </motion.div>
+                    </div>
                 </motion.div>
 
             </div>
