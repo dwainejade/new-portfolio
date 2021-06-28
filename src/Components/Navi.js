@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom";
+import Pdf from './Resume/Resume - Frontend.pdf';
 
 import './Navi.scss'
 // import Navbar from 'react-bootstrap/Navbar';
@@ -37,7 +38,7 @@ function Navi() {
                 Dwaine Matthew
             </Link>
             <div className='nav-links'>
-                <NavLink to="/resume" className='link'>Resume</NavLink>
+                <Link to={Pdf} className='link'> Resume</Link>
             </div>
         </div>
     )

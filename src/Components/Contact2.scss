@@ -14,6 +14,9 @@
   display: flex;
 
   .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: relative;
     background: rgb(227, 83, 83);
     color: white;
@@ -22,6 +25,10 @@
     margin-left: -30%;
     h2{
         color: white;
+    }
+    a{
+      color: #fff;
+      margin-bottom: 1rem;
     }
   }
 

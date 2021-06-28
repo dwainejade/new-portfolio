@@ -42,7 +42,7 @@ function Skills() {
         >
             <motion.div className="title">
                 <h2>Skills</h2>
-                <h3>I love learning new frameworks</h3>
+                <h3>A few that I've picked up and more to come.</h3>
                 <div className="divider" />
             </motion.div>
             <div className="skills-wrapper">
@@ -56,13 +56,13 @@ function Skills() {
                             ref={ref}
                         >
                             <FontAwesomeIcon icon={faChalkboardTeacher} className="skill-icon" size="5x" color="#CF5C36" />
-                            <h3>Front-End</h3>
+                            <h3>Frontend</h3>
                             <ul className="skills">
                                 <li className="skill">React</li>
                                 <li className="skill">HTML, CSS, SaSS, LESS</li>
                                 <li className="skill">JavaScript, AJAX, JSON</li>
                                 <li className="skill">Responsive Design</li>
-                                <li className="skill">Bootstrap</li>
+                                <li className="skill">Bootstrap, Material-UI</li>
                             </ul>
                         </motion.div>
                     </div>
@@ -79,7 +79,7 @@ function Skills() {
                             <ul className="skills">
                                 <li className="skill">Node.js, Express</li>
                                 <li className="skill">Postgres, SQLite</li>
-                                <li className="skill">Python</li>
+                                <li className="skill">RESTful API</li>
                                 <li className="skill">Postman, Insomnia</li>
                             </ul>
                         </motion.div>
@@ -95,10 +95,11 @@ function Skills() {
                             <FontAwesomeIcon icon={faWindowRestore} className="skill-icon" size="5x" color="#CF5C36" />
                             <h3>Other</h3>
                             <ul className="skills">
-                                <li className="skill">Unit Testing</li>
-                                <li className="skill">Version control (Git)</li>
+                                <li className="skill">Python</li>
+                                <li className="skill">Data Structures</li>
+                                <li className="skill">Version Control (Git)</li>
                                 <li className="skill">Figma, Illustrator</li>
-                                <li className="skill">Detail-oriented</li>
+                                <li className="skill">Detail-Oriented</li>
                             </ul>
                         </motion.div>
                     </div>
