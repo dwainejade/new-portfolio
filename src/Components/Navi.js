@@ -32,13 +32,20 @@ function Navi() {
         color: 'black',
     };
 
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+
     return (
         <div className='navbar' style={style}>
             <Link to="/" className='logo'>
                 Dwaine Matthew
             </Link>
             <div className='nav-links'>
-                <Link to={Pdf} className='link'> Resume</Link>
+                <Link className='link'
+                onClick={() => openInNewTab(Pdf)}
+                > Resume</Link>
             </div>
         </div>
     )

@@ -64,8 +64,12 @@ const SecretRecipe = () => {
                 >
                     <img className='grow' src={sfr} alt="laptop with pic of recipe website" />
                     <div className="button-wrapper">
-                        <Button a href='https://my-secret-family-recipes.herokuapp.com' className='btn website-btn' variant='danger' >Visit Website</Button>
-                        <Button a href='https://github.com/dwainejade/secret-family-recipes-frontend' className='btn website-btn' variant='primary' >View Code</Button>
+                        <Button a href='' className='btn website-btn' variant='danger'
+                            onClick={() => openInNewTab('https://my-secret-family-recipes.herokuapp.com')}
+                        > Visit Website</Button>
+                        <Button a href='' className='btn website-btn' variant='primary'
+                            onClick={() => openInNewTab('https://github.com/dwainejade/secret-family-recipes-frontend')}
+                        >View Code</Button>
                     </div>
                 </motion.div>
                 <motion.div className="caption-wrapper"
@@ -85,7 +89,7 @@ const SecretRecipe = () => {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </div >
     )
 }
 

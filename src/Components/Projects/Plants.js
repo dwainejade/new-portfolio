@@ -37,6 +37,11 @@ const rightVariants = {
     }
 }
 
+const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}
+
 const Plants = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
@@ -48,8 +53,8 @@ const Plants = () => {
 
     return (
         <div className="project-b">
-            <h3>Secret Family Recipe</h3>
-            <h4>Front-End Developer</h4>
+            <h3>Water My Plants API</h3>
+            <h4>Backend Developer</h4>
             <div className="project-wrapper">
                 <motion.div className="picture-wrapper"
                     variants={leftVariants}
@@ -59,8 +64,12 @@ const Plants = () => {
                 >
                     <img src={plants} alt="phone with pic of recipe website" />
                     <div className='button-wrapper'>
-                        <Button a href='https://watermy-plants.netlify.app' className='btn website-btn' variant='danger' >Visit Website</Button>
-                        <Button id="code-btn" a href='https://github.com/dwainejade/water-my-plants-backend' className='btn website-btn' variant='primary' >View Code</Button>
+                        <Button a href='' className='btn website-btn' variant='danger'
+                            onClick={() => openInNewTab('https://watermy-plants.netlify.app')}
+                        >Visit Website</Button>
+                        <Button id="code-btn" a href='' className='btn website-btn' variant='primary'
+                            onClick={() => openInNewTab('https://github.com/dwainejade/water-my-plants-backend')}
+                        >View Code</Button>
                     </div>
                 </motion.div>
                 <motion.div className="caption-wrapper"
