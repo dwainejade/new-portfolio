@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Pdf from './Resume/Resume - Frontend.pdf';
 
 import './Navi.scss'
 // import Navbar from 'react-bootstrap/Navbar';
@@ -31,13 +32,20 @@ function Navi() {
         color: 'black',
     };
 
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+
     return (
         <div className='navbar' style={style}>
             <Link to="/" className='logo'>
                 Dwaine Matthew
             </Link>
             <div className='nav-links'>
-                <NavLink to="/resume" className='link'>Resume</NavLink>
+                <Link className='link'
+                onClick={() => openInNewTab(Pdf)}
+                > Resume</Link>
             </div>
         </div>
     )
