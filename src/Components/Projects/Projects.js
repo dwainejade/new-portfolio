@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="projects-container" >
             <div className="title">
                 <h2>My Projects</h2>
-                <h3>Here are some of the apps I'm proud of.</h3>
+                <h3>Here are a few apps that I've built.</h3>
             </div>
             <div className="divider" />
             <MovieHub></MovieHub>

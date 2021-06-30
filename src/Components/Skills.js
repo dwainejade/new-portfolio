@@ -15,7 +15,7 @@ const headVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: .4,
+            delay: .2,
             duration: 1,
             ease: 'easeInOut'
         }
@@ -42,7 +42,7 @@ function Skills() {
         >
             <motion.div className="title">
                 <h2>Skills</h2>
-                <h3>A few that I've picked up and more to come.</h3>
+                <h3>Technologies I worked with.</h3>
                 <div className="divider" />
             </motion.div>
             <div className="skills-wrapper">

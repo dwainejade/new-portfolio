@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import plants from '../../images/plants.png';
@@ -43,6 +44,7 @@ const openInNewTab = (url) => {
 }
 
 const Plants = () => {
+    const [lgShow, setLgShow] = useState(false);
     const controls = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
@@ -62,7 +64,7 @@ const Plants = () => {
                     initial="hidden"
                     ref={ref}
                 >
-                    <img src={plants} alt="phone with pic of recipe website" />
+                    <img src={plants} alt="phone with pic of recipe website" onClick={() => setLgShow(true)} />
                     <div className='button-wrapper'>
                         <Button a href='' className='btn website-btn' variant='danger'
                             onClick={() => openInNewTab('https://watermy-plants.netlify.app')}
@@ -87,6 +89,20 @@ const Plants = () => {
                     </div>
                 </motion.div>
             </div>
+
+            <Modal
+                size="lg"
+                show={lgShow}
+                onHide={() => setLgShow(false)}
+                aria-labelledby="example-modal-sizes-title-lg"
+            >
+                <Modal.Body>
+                    <img class='img-fluid' src={plants} alt='' />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={()=>setLgShow(false)}>Close</Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }

@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import sfr from '../../images/sfr.png';
@@ -45,6 +46,9 @@ const openInNewTab = (url) => {
 const SecretRecipe = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
+
+    const [lgShow, setLgShow] = useState(false);
+
     useEffect(() => {
         if (inView) {
             controls.start("visible");
@@ -62,7 +66,9 @@ const SecretRecipe = () => {
                     initial="hidden"
                     ref={ref}
                 >
-                    <img className='grow' src={sfr} alt="laptop with pic of recipe website" />
+                    <img className='grow' src={sfr} alt="laptop with pic of recipe website"
+                        onClick={() => setLgShow(true)} />
+
                     <div className="button-wrapper">
                         <Button a href='' className='btn website-btn' variant='danger'
                             onClick={() => openInNewTab('https://my-secret-family-recipes.herokuapp.com')}
@@ -89,6 +95,21 @@ const SecretRecipe = () => {
                     </div>
                 </motion.div>
             </div>
+
+
+            <Modal
+                size="lg"
+                show={lgShow}
+                onHide={() => setLgShow(false)}
+                aria-labelledby="example-modal-sizes-title-lg"
+            >
+                <Modal.Body>
+                    <img class='img-fluid' src={sfr} alt='' />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={()=>setLgShow(false)}>Close</Button>
+                </Modal.Footer>
+            </Modal>
         </div >
     )
 }

@@ -45,7 +45,7 @@ function Hero() {
             >
                 <h1>Dwaine Matthew</h1>
                 <h2>Web Developer</h2>
-                <p>Full-stack developer specialized in frontend design. Currently having too much fun with React.</p>
+                <p>Full-stack developer specialized in frontend design. Currently advancing my skills with React and a lot of fun.</p>
             </motion.div>
             <motion.div className="hero-pic"
                 variants={picVariants}
