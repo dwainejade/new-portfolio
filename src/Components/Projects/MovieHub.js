@@ -80,7 +80,7 @@ const MovieHub = () => {
                     animate={controls}
                     initial="hidden"
                 >
-                    <p className="caption">A sleek and fully responsive website withthe ability to filterover 600,00 movies  and TV series by genre or  searchfor media by name. <br />
+                    <p className="caption">A sleek and fully responsive website with the ability to serach thousands of movies and TV series. You can easily filter by genre or search for media by title. The home page displays trending movies and shows along with it's imdb rating.<br />
                     </p>
                     <div className="stacks">
                         <Badge pill variant="secondary">React</Badge>
