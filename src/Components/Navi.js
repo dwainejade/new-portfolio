@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import Pdf from './Resume/Resume - Frontend.pdf';
+import Pdf from './Resume/Dwaine_Matthew_Resume_AFTER.pdf';
 
 import './Navi.scss'
 // import Navbar from 'react-bootstrap/Navbar';

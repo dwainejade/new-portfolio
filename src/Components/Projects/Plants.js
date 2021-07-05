@@ -81,8 +81,8 @@ const Plants = () => {
                 >
                     <p className="caption">This app is for all the plant parents to keep track of when each of their children need to be watered. Users can store, update, and remove plants from the databas. <br /> I created the backend using Node.js and SQL to store user and plant data. The users password is hashed using bcrypt.js befored being stored.</p>
                     <div className="stacks">
-                        <Badge pill variant="secondary">Node.js</Badge>
-                        <Badge pill variant="secondary">Express.js</Badge>
+                        <Badge pill variant="secondary">Node</Badge>
+                        <Badge pill variant="secondary">Express</Badge>
                         <Badge pill variant="secondary">SQLite</Badge>
                         <Badge pill variant="secondary">JavaScript</Badge>
                         <Badge pill variant="secondary">Heroku</Badge>

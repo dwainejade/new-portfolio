@@ -84,9 +84,9 @@ const MovieHub = () => {
                     </p>
                     <div className="stacks">
                         <Badge pill variant="secondary">React</Badge>
-                        <Badge pill variant="secondary">CSS</Badge>
-                        <Badge pill variant="secondary">Bootstrap</Badge>
-                        <Badge pill variant="secondary">Axios</Badge>
+                        <Badge pill variant="secondary">SCSS</Badge>
+                        <Badge pill variant="secondary">Material-UI</Badge>
+                        <Badge pill variant="secondary">Pagination</Badge>
                     </div>
                 </motion.div>
             </div>
