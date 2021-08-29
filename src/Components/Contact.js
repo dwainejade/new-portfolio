@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
             <div className='form-container'>
                 <h2>Contact Me</h2>
-                <form onSubmit={sendEmail} id='email-form'>
+                <form onSubmit={sendEmail} id='email-form' netlify>
                     <label htmlFor="name">Name*
                     <input type="text" name='name' required />
                     </label>
