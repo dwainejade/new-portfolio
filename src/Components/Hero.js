@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.scss'
-import profile_pic from '../images/me.jpg'
+import profile_pic from '../images/me2.jpg'
 import { motion } from 'framer-motion'
 
 const descriptionVariants = {

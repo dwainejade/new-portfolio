@@ -1,6 +1,7 @@
 import React from 'react'
 import './Projects.scss'
 import MovieHub from './MovieHub';
+import StorySquad from './StorySquad';
 import Plants from './Plants';
 import SecretRecipe from './SecretRecipe';
 
@@ -14,11 +15,13 @@ const Projects = () => {
                 <h3>Here are a few apps that I've built.</h3>
             </div>
             <div className="divider" />
-            <MovieHub></MovieHub>
+            <StorySquad/>
             <div className="divider" />
-            <Plants></Plants>
+            <MovieHub/>
             <div className="divider" />
-            <SecretRecipe></SecretRecipe>
+            <Plants/>
+            <div className="divider" />
+            <SecretRecipe/>
             <div className="divider" />
         </div>
     )
